@@ -1,0 +1,5 @@
+### Check current status
+GET http://localhost:3001/api/persons
+
+### Delete first item
+DELETE http://localhost:3001/api/persons/1

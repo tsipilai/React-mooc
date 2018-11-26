@@ -1,0 +1,11 @@
+### Check current status
+GET http://localhost:3001/api/persons
+
+### update person
+PUT http://localhost:3001/api/persons/5b43245ca682f71abc1aee92
+Content-Type: application/json
+
+{
+    "name" : "Arto Hellas",
+    "number": "040-789451"
+}

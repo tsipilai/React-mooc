@@ -1,0 +1,5 @@
+###Check status
+GET http://localhost:3001/api/persons
+
+###get one person
+GET http://localhost:3001/api/persons/5b43245ca682f71abc1aee92

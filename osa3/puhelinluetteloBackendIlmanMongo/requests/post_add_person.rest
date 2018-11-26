@@ -1,0 +1,39 @@
+### Check current status
+GET http://localhost:3001/api/persons
+
+
+### New Person that doesn't exist
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name" : "uusi Nimi",
+    "number": "040-1234567"
+}
+
+### Without name
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name" : "",
+    "number": "040-1234567"
+}
+
+### without number
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name" : "uusi Nimi",
+    "number": ""
+}
+
+### Person that already exists
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name" : "Arto Hellas",
+    "number": "040-1234567"
+}
